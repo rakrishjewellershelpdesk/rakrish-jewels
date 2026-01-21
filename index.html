@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rakrish Jewelry by AruDak</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">
+	<img src="Images/logo.png" alt="Rakrish Jewels Logo">
+	</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#shop">Shop</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="home">
+        <h1>Handcrafted Luxury Jewelry</h1>
+        <p>Elegance • Beauty • Timeless Design</p>
+
+	<div class="slider hero-slider">
+    		<img src="Images/Necklace_01-1.jpeg" class="slide active"onclick="openModal(this)">
+    		<img src="Images/Necklace_02-1.jpeg" class="slide"onclick="openModal(this)">
+    		<img src="Images/Necklace_03-1.jpeg" class="slide"onclick="openModal(this)">
+   		<img src="Images/Necklace_04-1.jpeg" class="slide"onclick="openModal(this)">
+		<img src="Images/Necklace_05-1.jpeg" class="slide"onclick="openModal(this)">
+		<img src="Images/Necklace_06-1.jpeg" class="slide"onclick="openModal(this)">
+		<img src="Images/Necklace_07-1.jpeg" class="slide"onclick="openModal(this)">
+		<img src="Images/Necklace_08-1.jpeg" class="slide"onclick="openModal(this)">
+		<img src="Images/Necklace_09-1.jpeg" class="slide"onclick="openModal(this)">
+		<img src="Images/Necklace_10-1.jpeg" class="slide"onclick="openModal(this)">
+		<img src="Images/Necklace_11-1.jpeg" class="slide"onclick="openModal(this)">
+		<img src="Images/Necklace_12-1.jpeg" class="slide"onclick="openModal(this)">
+		<img src="Images/Necklace_13-1.jpeg" class="slide"onclick="openModal(this)">
+		<img src="Images/Necklace_14-1.jpeg" class="slide"onclick="openModal(this)">
+		<img src="Images/Necklace_15-1.jpeg" class="slide"onclick="openModal(this)">
+		<img src="Images/Necklace_16-1.jpeg" class="slide"onclick="openModal(this)">
+		<img src="Images/Necklace_17-1.jpeg" class="slide"onclick="openModal(this)">
+		<img src="Images/Necklace_18-1.jpeg" class="slide"onclick="openModal(this)">
+		<img src="Images/Necklace_20-1.jpeg" class="slide"onclick="openModal(this)">
+		<img src="Images/Necklace_21-1.jpeg" class="slide"onclick="openModal(this)">
+
+
+	
+ 	<button class="prev" onclick="prevSlide(this)">❮</button>
+   	<button class="next" onclick="nextSlide(this)">❯</button>
+	</div>
+	<a class="btn" href="#shop">Shop Now</a>
+	
+    </section>
+
+    <!-- PRODUCT GRID -->
+    <section class="products" id="shop">
+        <h2>Our Collection</h2>
+
+        <div class="product-grid">
+            <div class="product-card">
+		<div class="slider">
+			<img src="Images/Necklace_01-1.jpeg" class="slide active" onclick="openModal(this)">
+        		<img src="Images/Necklace_01-2.jpeg" class="slide" onclick="openModal(this)">
+        		<img src="Images/Necklace_01-3.png" class="slide" onclick="openModal(this)" >
+        		<img src="Images/Necklace_01-4.jpeg" class="slide" onclick="openModal(this)">
+
+        <button class="prev" onclick="prevSlide(this)">❮</button>
+        <button class="next" onclick="nextSlide(this)">❯</button>
+	<div class="dots">
+            <span class="dot active" onclick="goToSlide(this, 0)"></span>
+            <span class="dot" onclick="goToSlide(this, 1)"></span>
+            <span class="dot" onclick="goToSlide(this, 2)"></span>
+            <span class="dot" onclick="goToSlide(this, 3)"></span>
+        </div>
+    </div>
+                "01 - Pearl Necklace"
+                <h3>01 - White Pearl Necklace</h3>
+                <p>MRP(₹)199</p>
+		<p>Our price(₹)149</p>
+                <button onclick="buyNow('01 - White Pearl Necklace', 199)">
+  		Buy Now
+		</button>
+            </div>
+
+
+       
+            <div class="product-card">
+		<div class="slider">
+			<img src="Images/Necklace_02-1.jpeg" class="slide active"onclick="openModal(this)">
+        		<img src="Images/Necklace_02-2.jpeg" class="slide"onclick="openModal(this)">
+        		<img src="Images/Necklace_02-3.jpeg" class="slide"onclick="openModal(this)">
+
+        <button class="prev" onclick="prevSlide(this)">❮</button>
+        <button class="next" onclick="nextSlide(this)">❯</button>
+	<div class="dots">
+            <span class="dot active" onclick="goToSlide(this, 0)"></span>
+            <span class="dot" onclick="goToSlide(this, 1)"></span>
+            <span class="dot" onclick="goToSlide(this, 2)"></span>
+            <span class="dot" onclick="goToSlide(this, 3)"></span>
+        </div>
+    </div>
+
+                "02 - Pearl Necklace"
+                <h3>02 - White Pearl Nazar Necklace</h3>
+                <p>(₹)199</p>
+                <button onclick="buyNow('02 - White Pearl Nazar Necklace', 199)">
+  		Buy Now
+		</button>
+            </div>
+
+      
+            <div class="product-card">
+		<div class="slider">
+			<img src="Images/Necklace_03-1.jpeg" class="slide active"onclick="openModal(this)">
+        		<img src="Images/Necklace_03-2.jpeg" class="slide"onclick="openModal(this)">
+        		<video class="slide" controls>
+  			  <source src="Images/Necklace_03-3.mp4" type="video/mp4">
+			</video>
+
+        <button class="prev" onclick="prevSlide(this)">❮</button>
+        <button class="next" onclick="nextSlide(this)">❯</button>
+	<div class="dots">
+            <span class="dot active" onclick="goToSlide(this, 0)"></span>
+            <span class="dot" onclick="goToSlide(this, 1)"></span>
+            <span class="dot" onclick="goToSlide(this, 2)"></span>
+            <span class="dot" onclick="goToSlide(this, 3)"></span>
+        </div>
+    </div>
+
+                "03 - Pearl Necklace"
+                <h3>03 - Black Pearl Nazar Necklace</h3>
+                <p>(₹)199</p>
+                <button onclick="buyNow('03 - Black Pearl Nazar Necklace', 199)">
+  		Buy Now
+		</button>
+            </div>      
+
+
+        
+            <div class="product-card">
+		<div class="slider">
+			<img src="Images/Necklace_04-1.jpeg" class="slide active"onclick="openModal(this)">
+        		<img src="Images/Necklace_04-2.jpeg" class="slide"onclick="openModal(this)">
+        		<img src="Images/Necklace_04-3.jpeg" class="slide"onclick="openModal(this)">
+			<img src="Images/Necklace_04-4.jpeg" class="slide"onclick="openModal(this)">
+
+        <button class="prev" onclick="prevSlide(this)">❮</button>
+        <button class="next" onclick="nextSlide(this)">❯</button>
+	<div class="dots">
+            <span class="dot active" onclick="goToSlide(this, 0)"></span>
+            <span class="dot" onclick="goToSlide(this, 1)"></span>
+            <span class="dot" onclick="goToSlide(this, 2)"></span>
+            <span class="dot" onclick="goToSlide(this, 3)"></span>
+        </div>
+    </div>
+
+                "04- Pearl Necklace"
+                <h3>04 - White Black Pearl Necklace</h3>
+                <p>(₹)199</p>
+                <button onclick="buyNow('04 - White Black Pearl Necklace', 199)">
+  		Buy Now
+		</button>
+            </div>    
+
+     
+            <div class="product-card">
+		<div class="slider">
+			<img src="Images/Necklace_05-1.jpeg" class="slide active"onclick="openModal(this)">
+        		<img src="Images/Necklace_05-2.jpeg" class="slide"onclick="openModal(this)">
+        		
+        <button class="prev" onclick="prevSlide(this)">❮</button>
+        <button class="next" onclick="nextSlide(this)">❯</button>
+	<div class="dots">
+            <span class="dot active" onclick="goToSlide(this, 0)"></span>
+            <span class="dot" onclick="goToSlide(this, 1)"></span>
+            <span class="dot" onclick="goToSlide(this, 2)"></span>
+            <span class="dot" onclick="goToSlide(this, 3)"></span>
+        </div>
+    </div>
+
+                "05 - Pearl Necklace"
+                <h3>05 - White zig zag Pearl Necklace</h3>
+                <p>(₹)299</p>
+                <button onclick="buyNow('05 - White zig zag Pearl Necklace', 299)">
+  		Buy Now
+		</button>
+            </div> 
+
+		
+
+        
+            <div class="product-card">
+		<div class="slider">
+			<img src="Images/Necklace_06-1.jpeg" class="slide active"onclick="openModal(this)">
+        		<img src="Images/Necklace_06-2.jpeg" class="slide"onclick="openModal(this)">
+        		<img src="Images/Necklace_06-3.jpeg" class="slide"onclick="openModal(this)">
+			<img src="Images/Necklace_06-4.jpeg" class="slide"onclick="openModal(this)">
+
+        <button class="prev" onclick="prevSlide(this)">❮</button>
+        <button class="next" onclick="nextSlide(this)">❯</button>
+	<div class="dots">
+            <span class="dot active" onclick="goToSlide(this, 0)"></span>
+            <span class="dot" onclick="goToSlide(this, 1)"></span>
+            <span class="dot" onclick="goToSlide(this, 2)"></span>
+            <span class="dot" onclick="goToSlide(this, 3)"></span>
+        </div>
+    </div>
+
+                "06 - Pearl Necklace"
+                <h3>06 - White Moti Chota Bada Joint Necklace</h3>
+                <p>(₹)199</p>
+                <button onclick="buyNow('06 - White zig zag Pearl Necklace', 299)">
+  		Buy Now
+		</button>
+            </div> 
+
+	
+
+       
+            <div class="product-card">
+		<div class="slider">
+			<img src="Images/Necklace_07-1.jpeg" class="slide active"onclick="openModal(this)">
+        		<img src="Images/Necklace_07-2.jpeg" class="slide"onclick="openModal(this)">
+        		<img src="Images/Necklace_07-3.jpeg" class="slide"onclick="openModal(this)">
+			<img src="Images/Necklace_07-4.jpeg" class="slide"onclick="openModal(this)">
+			<img src="Images/Necklace_07-5.jpeg" class="slide"onclick="openModal(this)">
+
+        <button class="prev" onclick="prevSlide(this)">❮</button>
+        <button class="next" onclick="nextSlide(this)">❯</button>
+	<div class="dots">
+            <span class="dot active" onclick="goToSlide(this, 0)"></span>
+            <span class="dot" onclick="goToSlide(this, 1)"></span>
+            <span class="dot" onclick="goToSlide(this, 2)"></span>
+            <span class="dot" onclick="goToSlide(this, 3)"></span>
+        </div>
+    </div>
+
+                "07 - Pearl Necklace"
+                <h3>07 - White Grape shape Pearl Necklace</h3>
+                <p>(₹)199</p>
+                <button onclick="buyNow('07 - White Grape shape Pearl Necklace', 199)">
+  		Buy Now
+		</button>
+            </div> 
+
+	
+
+     
+            <div class="product-card">
+		<div class="slider">
+			<img src="Images/Necklace_08-1.jpeg" class="slide active"onclick="openModal(this)">
+        		<img src="Images/Necklace_08-2.jpeg" class="slide"onclick="openModal(this)">
+        		
+
+        <button class="prev" onclick="prevSlide(this)">❮</button>
+        <button class="next" onclick="nextSlide(this)">❯</button>
+	<div class="dots">
+            <span class="dot active" onclick="goToSlide(this, 0)"></span>
+            <span class="dot" onclick="goToSlide(this, 1)"></span>
+            <span class="dot" onclick="goToSlide(this, 2)"></span>
+            <span class="dot" onclick="goToSlide(this, 3)"></span>
+        </div>
+    </div>
+
+                "08 - Pearl Necklace"
+                <h3>08 - Matte Gold grape Necklace</h3>
+                <p>(₹)199</p>
+                <button onclick="buyNow('08 - Matte Gold grape Necklace', 199)">
+  		Buy Now
+		</button>
+            </div> 
+
+	
+
+       
+            <div class="product-card">
+		<div class="slider">
+			<img src="Images/Necklace_09-1.jpeg" class="slide active"onclick="openModal(this)">
+        		<img src="Images/Necklace_09-2.jpeg" class="slide"onclick="openModal(this)">
+        		<img src="Images/Necklace_09-3.jpeg" class="slide"onclick="openModal(this)">
+
+
+        <button class="prev" onclick="prevSlide(this)">❮</button>
+        <button class="next" onclick="nextSlide(this)">❯</button>
+	<div class="dots">
+            <span class="dot active" onclick="goToSlide(this, 0)"></span>
+            <span class="dot" onclick="goToSlide(this, 1)"></span>
+            <span class="dot" onclick="goToSlide(this, 2)"></span>
+            <span class="dot" onclick="goToSlide(this, 3)"></span>
+        </div>
+    </div>
+
+                "09 - Pearl Necklace"
+                <h3>09 - Matte Gold & White Pearl Necklace (2 peice) </h3>
+                <p>(₹)300</p>
+                <button onclick="buyNow('09 - Matte Gold & White Pearl Necklace (2 peice)', 299)">
+  		Buy Now
+		</button>
+            </div> 
+	
+
+        
+            <div class="product-card">
+		<div class="slider">
+			<img src="Images/Necklace_10-1.jpeg" class="slide active"onclick="openModal(this)">
+        		<img src="Images/Necklace_10-2.jpeg" class="slide"onclick="openModal(this)">
+        		<img src="Images/Necklace_10-3.jpeg" class="slide"onclick="openModal(this)">
+			<img src="Images/Necklace_10-4.jpeg" class="slide"onclick="openModal(this)">
+
+        <button class="prev" onclick="prevSlide(this)">❮</button>
+        <button class="next" onclick="nextSlide(this)">❯</button>
+	<div class="dots">
+            <span class="dot active" onclick="goToSlide(this, 0)"></span>
+            <span class="dot" onclick="goToSlide(this, 1)"></span>
+            <span class="dot" onclick="goToSlide(this, 2)"></span>
+            <span class="dot" onclick="goToSlide(this, 3)"></span>
+        </div>
+    </div>
+
+                "10- Pearl Necklace"
+                <h3>10 - Rose Gold & Pink Jacob Moti Choker Necklace</h3>
+                <p>(₹)250</p>
+                <button onclick="buyNow('10 - Rose Gold & Pink Jacob Moti Choker Necklace', 250)">
+  		Buy Now
+		</button>
+            </div> 
+		
+	
+
+        
+            <div class="product-card">
+		<div class="slider">
+			<img src="Images/Necklace_11-1.jpeg" class="slide active"onclick="openModal(this)">
+        		<img src="Images/Necklace_11-2.jpeg" class="slide"onclick="openModal(this)">
+        		<img src="Images/Necklace_11-3.jpeg" class="slide"onclick="openModal(this)">
+			
+
+        <button class="prev" onclick="prevSlide(this)">❮</button>
+        <button class="next" onclick="nextSlide(this)">❯</button>
+	<div class="dots">
+            <span class="dot active" onclick="goToSlide(this, 0)"></span>
+            <span class="dot" onclick="goToSlide(this, 1)"></span>
+            <span class="dot" onclick="goToSlide(this, 2)"></span>
+            <span class="dot" onclick="goToSlide(this, 3)"></span>
+        </div>
+    </div>
+
+                "11- Pearl Necklace"
+                <h3>11 - Rose Gold & Black Pearl Necklace</h3>
+                <p>(₹)199</p>
+                <button onclick="buyNow('11 - Rose Gold & Black Pearl Necklace', 199)">
+  		Buy Now
+		</button>
+            </div> 
+
+	
+
+        
+            <div class="product-card">
+		<div class="slider">
+			<img src="Images/Necklace_12-1.jpeg" class="slide active"onclick="openModal(this)">
+        		<img src="Images/Necklace_12-2.jpeg" class="slide"onclick="openModal(this)">
+        		<img src="Images/Necklace_12-3.jpeg" class="slide"onclick="openModal(this)">
+			<img src="Images/Necklace_12-4.jpeg" class="slide"onclick="openModal(this)">
+
+        <button class="prev" onclick="prevSlide(this)">❮</button>
+        <button class="next" onclick="nextSlide(this)">❯</button>
+	<div class="dots">
+            <span class="dot active" onclick="goToSlide(this, 0)"></span>
+            <span class="dot" onclick="goToSlide(this, 1)"></span>
+            <span class="dot" onclick="goToSlide(this, 2)"></span>
+            <span class="dot" onclick="goToSlide(this, 3)"></span>
+        </div>
+    </div>
+
+                "12 - Pearl Necklace"
+                <h3>12 - White Rose gold Salli Choker Necklace</h3>
+                <p>(₹)199</p>
+                <button onclick="buyNow('12 - White Rose gold Salli Choker Necklace', 199)">
+  		Buy Now
+		</button>
+            </div> 
+
+	
+
+       
+            <div class="product-card">
+		<div class="slider">
+			<img src="Images/Necklace_13-1.jpeg" class="slide active"onclick="openModal(this)">
+        		<img src="Images/Necklace_13-2.jpeg" class="slide"onclick="openModal(this)">
+        		<img src="Images/Necklace_13-3.jpeg" class="slide"onclick="openModal(this)">
+			
+
+        <button class="prev" onclick="prevSlide(this)">❮</button>
+        <button class="next" onclick="nextSlide(this)">❯</button>
+	<div class="dots">
+            <span class="dot active" onclick="goToSlide(this, 0)"></span>
+            <span class="dot" onclick="goToSlide(this, 1)"></span>
+            <span class="dot" onclick="goToSlide(this, 2)"></span>
+            <span class="dot" onclick="goToSlide(this, 3)"></span>
+        </div>
+    </div>
+
+                "13 - Pearl Necklace"
+                <h3>13 - White Jacob cross shape & Black Hexagon Choker Necklace</h3>
+                <p>(₹)199</p>
+                <button onclick="buyNow('13 - White Jacob cross shape & Black Hexagon Choker Necklace', 249)">
+  		Buy Now
+		</button>
+            </div> 
+
+	
+
+     
+            <div class="product-card">
+		<div class="slider">
+			<img src="Images/Necklace_14-1.jpeg" class="slide active"onclick="openModal(this)">
+        		<img src="Images/Necklace_14-2.jpeg" class="slide"onclick="openModal(this)">
+        		
+
+        <button class="prev" onclick="prevSlide(this)">❮</button>
+        <button class="next" onclick="nextSlide(this)">❯</button>
+	<div class="dots">
+            <span class="dot active" onclick="goToSlide(this, 0)"></span>
+            <span class="dot" onclick="goToSlide(this, 1)"></span>
+            <span class="dot" onclick="goToSlide(this, 2)"></span>
+            <span class="dot" onclick="goToSlide(this, 3)"></span>
+        </div>
+    </div>
+
+                "14 - Pearl Necklace"
+                <h3>14 - White small Pearl Long Necklace 10 inch Necklace</h3>
+                <p>(₹)199</p>
+                <button onclick="buyNow('14 - White small Pearl Long Necklace 10 inch Necklace', 199)">
+  		Buy Now
+		</button>
+            </div> 
+
+	
+
+            <div class="product-card">
+		<div class="slider">
+			<img src="Images/Necklace_15-1.jpeg" class="slide active"onclick="openModal(this)">
+        		<img src="Images/Necklace_15-2.jpeg" class="slide"onclick="openModal(this)">
+       
+
+        <button class="prev" onclick="prevSlide(this)">❮</button>
+        <button class="next" onclick="nextSlide(this)">❯</button>
+	<div class="dots">
+            <span class="dot active" onclick="goToSlide(this, 0)"></span>
+            <span class="dot" onclick="goToSlide(this, 1)"></span>
+            <span class="dot" onclick="goToSlide(this, 2)"></span>
+            <span class="dot" onclick="goToSlide(this, 3)"></span>
+        </div>
+    </div>
+
+                "15 - Pearl Necklace"
+                <h3>15 - White small Diamond shape Pearl & Black Hexagon Choker Necklace</h3>
+                <p>(₹)199</p>
+                <button onclick="buyNow('15 - White small Diamond shape Pearl & Black Hexagon Choker Necklace', 199)">
+  		Buy Now
+		</button>
+            </div> 
+	
+	
+
+      
+            <div class="product-card">
+		<div class="slider">
+			<img src="Images/Necklace_17-1.jpeg" class="slide active"onclick="openModal(this)">
+        		<img src="Images/Necklace_17-2.jpeg" class="slide"onclick="openModal(this)">
+        		<img src="Images/Necklace_17-3.jpeg" class="slide"onclick="openModal(this)">
+			
+
+        <button class="prev" onclick="prevSlide(this)">❮</button>
+        <button class="next" onclick="nextSlide(this)">❯</button>
+	<div class="dots">
+            <span class="dot active" onclick="goToSlide(this, 0)"></span>
+            <span class="dot" onclick="goToSlide(this, 1)"></span>
+            <span class="dot" onclick="goToSlide(this, 2)"></span>
+            <span class="dot" onclick="goToSlide(this, 3)"></span>
+        </div>
+    </div>
+
+                "17- Pearl Necklace"
+                <h3>17 - White small Pearl with Golden Jacob 10 inch Necklace</h3>
+                <p>(₹)199</p>
+                <button onclick="buyNow('17 - White small Pearl with Golden Jacob 10 inch Necklace', 199)">
+  		Buy Now
+		</button>
+            </div> 
+
+	
+
+       
+            <div class="product-card">
+		<div class="slider">
+			<img src="Images/Necklace_18-1.jpeg" class="slide active"onclick="openModal(this)">
+        		<img src="Images/Necklace_18-2.jpeg" class="slide"onclick="openModal(this)">
+        		<img src="Images/Necklace_18-3.jpeg" class="slide"onclick="openModal(this)">
+			
+
+        <button class="prev" onclick="prevSlide(this)">❮</button>
+        <button class="next" onclick="nextSlide(this)">❯</button>
+	<div class="dots">
+            <span class="dot active" onclick="goToSlide(this, 0)"></span>
+            <span class="dot" onclick="goToSlide(this, 1)"></span>
+            <span class="dot" onclick="goToSlide(this, 2)"></span>
+            <span class="dot" onclick="goToSlide(this, 3)"></span>
+        </div>
+    </div>
+
+                "18 - Pearl Necklace"
+                <h3>18 - White 6MM Pearl Jacob Moti Choker Necklace</h3>
+                <p>(₹)299</p>
+                <button onclick="buyNow('18 - White 6MM Pearl Jacob Moti Choker Necklace', 299)">
+  		Buy Now
+		</button>
+            </div> 
+
+	
+
+       
+            <div class="product-card">
+		<div class="slider">
+			<img src="Images/Necklace_20-1.jpeg" class="slide active"onclick="openModal(this)">
+        		<img src="Images/Necklace_20-2.jpeg" class="slide"onclick="openModal(this)">
+        		<img src="Images/Necklace_20-3.jpeg" class="slide"onclick="openModal(this)">
+			<img src="Images/Necklace_20-4.jpeg" class="slide"onclick="openModal(this)">
+
+        <button class="prev" onclick="prevSlide(this)">❮</button>
+        <button class="next" onclick="nextSlide(this)">❯</button>
+	<div class="dots">
+            <span class="dot active" onclick="goToSlide(this, 0)"></span>
+            <span class="dot" onclick="goToSlide(this, 1)"></span>
+            <span class="dot" onclick="goToSlide(this, 2)"></span>
+            <span class="dot" onclick="goToSlide(this, 3)"></span>
+        </div>
+    </div>
+
+                "20 - Pearl Necklace"
+                <h3>20 - Golden Long 24 inch Necklace</h3>
+                <p>(₹)199</p>
+                <button onclick="buyNow('20 - Golden Long 24 inch Necklace', 199)">
+  		Buy Now
+		</button>>
+            </div> 
+
+	
+
+     
+            <div class="product-card">
+		<div class="slider">
+			<img src="Images/Necklace_21-1.jpeg" class="slide active"onclick="openModal(this)">
+        		<img src="Images/Necklace_21-2.jpeg" class="slide"onclick="openModal(this)">
+        		<img src="Images/Necklace_21-3.jpeg" class="slide"onclick="openModal(this)">
+			
+
+        <button class="prev" onclick="prevSlide(this)">❮</button>
+        <button class="next" onclick="nextSlide(this)">❯</button>
+	<div class="dots">
+            <span class="dot active" onclick="goToSlide(this, 0)"></span>
+            <span class="dot" onclick="goToSlide(this, 1)"></span>
+            <span class="dot" onclick="goToSlide(this, 2)"></span>
+            <span class="dot" onclick="goToSlide(this, 3)"></span>
+        </div>
+    </div>
+
+                "21 - Pearl Necklace"
+                <h3>21 - Golden Long Necklace 15.5 inch Choker Necklace</h3>
+                <p>(₹)199</p>
+                <button onclick="buyNow('05 - White zig zag Pearl Necklace', 199)">
+  		Buy Now
+		</button>
+            </div> 
+
+	
+
+          
+
+            <div class="product-card">
+		<div class="slider">
+			<img src="Images/Necklace_16-1.jpeg" class="slide active"onclick="openModal(this)">
+        		<img src="Images/Necklace_16-2.jpeg" class="slide"onclick="openModal(this)">
+        		<img src="Images/Necklace_16-3.jpeg" class="slide"onclick="openModal(this)">
+			<img src="Images/Necklace_16-4.jpeg" class="slide"onclick="openModal(this)">
+
+        <button class="prev" onclick="prevSlide(this)">❮</button>
+        <button class="next" onclick="nextSlide(this)">❯</button>
+	<div class="dots">
+            <span class="dot active" onclick="goToSlide(this, 0)"></span>
+            <span class="dot" onclick="goToSlide(this, 1)"></span>
+            <span class="dot" onclick="goToSlide(this, 2)"></span>
+            <span class="dot" onclick="goToSlide(this, 3)"></span>
+        </div>
+    </div>
+
+                "16 - CHAINS"
+                <h3>16 - Matte Gold Moti with Rose Gold Chain </h3>
+                <p>(₹)100</p>
+                <button onclick="buyNow('16 - Matte Gold Moti with Rose Gold Chain', 100)">
+  		Buy Now
+		</button>
+            </div> 
+
+	
+
+        
+
+	
+            <div class="product-card">
+		<div class="slider">
+			<img src="Images/Jhula_1-2.jpeg" class="slide active"onclick="openModal(this)">
+        		<img src="Images/Jhula_1-3.jpeg" class="slide"onclick="openModal(this)">
+        		<img src="Video/Jhula_1-1.mp4" class="slide"onclick="openModal(this)">
+		
+
+        <button class="prev" onclick="prevSlide(this)">❮</button>
+        <button class="next" onclick="nextSlide(this)">❯</button>
+	<div class="dots">
+            <span class="dot active" onclick="goToSlide(this, 0)"></span>
+            <span class="dot" onclick="goToSlide(this, 1)"></span>
+            <span class="dot" onclick="goToSlide(this, 2)"></span>
+            <span class="dot" onclick="goToSlide(this, 3)"></span>
+        </div>
+    </div>
+
+                "01- Radhakrishna Jhula" />
+                <h3>01 - White Pearl and Red Bead RADHE Jhula </h3>
+                <p>(₹)2500</p>
+                <button onclick="buyNow('01 - White Pearl and Red Bead RADHE Jhula', 2500)">
+  		Buy Now
+		</button>
+            </div> 
+
+	
+            <div class="product-card">
+		<div class="slider">
+			<img src="Images/Jhula_2-1.jpeg" class="slide active"onclick="openModal(this)">
+        		<img src="Images/Jhula_2-2.jpeg" class="slide"onclick="openModal(this)">
+        		
+		
+
+        <button class="prev" onclick="prevSlide(this)">❮</button>
+        <button class="next" onclick="nextSlide(this)">❯</button>
+	<div class="dots">
+            <span class="dot active" onclick="goToSlide(this, 0)"></span>
+            <span class="dot" onclick="goToSlide(this, 1)"></span>
+            <span class="dot" onclick="goToSlide(this, 2)"></span>
+            <span class="dot" onclick="goToSlide(this, 3)"></span>
+        </div>
+    </div>
+
+                "02 - Radhakrishna Jhula" />
+                <h3>02 - Green and Red Pearl RADHEKRISHNA Jhula </h3>
+                <p>(₹)3000</p>
+                <button onclick="buyNow('02 - Green and Red Pearl RADHEKRISHNA Jhula', 3000)">
+  		Buy Now
+		</button>
+            </div> 
+
+
+	
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <p>
+            Rakrish Fashion Jewelry and Jhula for Kanhaji by AruDak is more than a brand. Its not just a jewelry but a emotions of mother,
+	    daughter and sisters who dream about starting their own brand. My mother she use make jewelry, 
+	    a helping hand to my father to meet the need of their kids. We craft elegant, one-of-a-kind jewelry made with passion and love.
+            Every piece reflects timeless beauty and superior craftsmanship.
+        </p>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <form action="https://formsubmit.co/rakrishjewellershelpdesk@gmail.com" method="POST">
+
+    <!-- Security -->
+    <input type="hidden" name="_captcha" value="true">
+    <input type="text" name="_honey" style="display:none">
+
+    <!-- Redirect after submit -->
+    <input type="hidden" name="_next" value="thankyou.html">
+
+    <!-- Subject -->
+    <input type="hidden" name="_subject" value="New Jewelry Inquiry">
+
+    <input type="text" name="name" placeholder="Rakrish_Jewels" required>
+    <input type="email" name="email" placeholder="rakrishjewellershelpdesk@gmail.com" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+
+    <button type="submit">Send</button>
+</form>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Thank You</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #fffde7;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        h1 { color: #2b2b2b; }
+        p { font-size: 18px; }
+        a {
+            color: #d4af37;
+            font-weight: bold;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Thank You!</h1>
+    <p>Your message has been sent successfully.</p>
+    <a href="index.html">Back to Home</a>
+<a href="https://wa.me/919167903884?text=Hi%20I%20am%20interested%20in%20your%20jewelry"
+   class="whatsapp-float"
+   target="_blank">
+    💬
+</a>
+</body>
+</html>
+
+
+
+    </section>
+
+<!-- IMAGE MODAL -->
+<div id="imageModal" class="image-modal">
+    <span class="close-btn" onclick="closeModal(event)">&times;</span>
+
+    <button class="modal-prev" onclick="modalPrev()">❮</button>
+    <img id="modalImage">
+    <button class="modal-next" onclick="modalNext()">❯</button>
+
+    <div class="modal-info">
+        <h3 id="modalTitle"></h3>
+        <p id="modalPrice"></p>
+    </div>
+</div>
+
+<a href="https://www.google.com">
+  <img src="google_logo.jpg" alt="Google Logo">
+</a>
+
+    <footer>
+        © 2025 Rakrish Jewellers by AruDak
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

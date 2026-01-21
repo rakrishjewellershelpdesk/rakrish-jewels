@@ -1,0 +1,307 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: #ada344;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: #000;
+    color: white;
+    position: sticky;
+    top: 0;
+}
+
+header nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.hero {
+    background: url("images/hero.jpg") center/cover no-repeat;
+    padding: 120px 20px;
+    text-align: center;
+    color: white;
+}
+
+.btn {
+    background: gold;
+    padding: 10px 25px;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.products {
+    padding: 50px;
+    text-align: center;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+    padding: 20px;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    background: white;
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.about, .contact {
+    padding: 50px;
+    text-align: center;
+}
+
+
+form input, form textarea {
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid #770303;
+}
+
+form button {
+    padding: 10px 25px;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+footer {
+    background: #000;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+.slider {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide {
+    width: 100%;
+    display: none;
+    border-radius: 10px;
+}
+
+.slide.active {
+    display: block;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: rgba(255, 255, 255);
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 18px;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.prev:hover, .next:hover {
+    background: rgba(0,0,0,0.8);
+}
+
+
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 85vh;          /* BIG hero */
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero-image {
+  height: 150px;           /* size your image */
+  width: auto;
+  object-fit: contain;
+}
+
+.btn {
+  background-color: #ffcc00; /* yellow */
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.dots {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  margin: 0 4px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: #ffcc00; /* gold/yellow to match buttons */
+}
+
+.slide {
+  width: 100%;
+  max-height: 250px; /* or your preferred max height */
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.hero-btn {
+    margin-top: 80px;
+    z-index: 20;
+    position: relative;
+}
+
+/* MODAL BASE */
+.image-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.95);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* IMAGE */
+#modalImage {
+    max-width: 85%;
+    max-height: 80%;
+    transition: transform 0.3s ease;
+    cursor: zoom-in;
+}
+
+/* CLOSE */
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+
+/* ARROWS */
+.modal-prev,
+.modal-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255,255,255,0.2);
+    border: none;
+    color: white;
+    font-size: 30px;
+    padding: 12px 16px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.modal-prev { left: 30px; }
+.modal-next { right: 30px; }
+
+/* INFO */
+.modal-info {
+    position: absolute;
+    bottom: 30px;
+    text-align: center;
+    color: white;
+}
+
+.modal-info h3 {
+    margin: 0;
+}
+
+.modal-info p {
+    margin: 5px 0 0;
+    font-size: 18px;
+}
+
+.logo img {
+  height: 100px;
+  width: auto;
+}
+
+@media (max-width: 768px) {
+  .logo img {
+    height: 40px;
+  }
+}
+
+.about h2,
+.contact h2 {
+    color: #1f1f1f;
+}
+
+.about p,
+.contact p {
+    color: #ffffff;
+}
+
+.about p,
+.contact p {
+    line-height: 1.8;
+    max-width: 800px;
+    margin: auto;
+}
+
+form input,
+form textarea {
+    color: #000;
+}
+
+.btn:hover,
+form button:hover {
+    background-color: #d4af37;
+    color: #000;
+}
+
+.hero-section,
+.products,
+.about,
+.contact {
+    background-color: #ada344;
+}
