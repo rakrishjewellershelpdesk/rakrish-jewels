@@ -305,3 +305,49 @@ form button:hover {
 .contact {
     background-color: #ada344;
 }
+
+.coming-soon-slider {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 40px;
+    overflow: hidden;
+}
+
+.coming-soon-card {
+    width: 320px;
+    background: #fff8ec;
+    border: 2px solid #c9a24d;
+    border-radius: 14px;
+    padding: 25px 20px;
+    text-align: center;
+    font-family: 'Georgia', serif;
+    animation: slideMove 6s ease-in-out infinite;
+}
+
+.coming-soon-card h2 {
+    font-size: 18px;
+    color: #7a5c1e;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.coming-soon-card h2 span {
+    font-size: 14px;
+}
+
+.coming-soon-card p {
+    font-size: 14px;
+    color: #b8860b;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+/* SLIDE ANIMATION */
+@keyframes slideMove {
+    0% { transform: translateX(0); opacity: 0; }
+    20% { transform: translateX(-30px); opacity: 1; }
+    50% { transform: translateX(-60px); opacity: 1; }
+    80% { transform: translateX(-30px); opacity: 1; }
+    100% { transform: translateX(0); opacity: 0; }
+}
